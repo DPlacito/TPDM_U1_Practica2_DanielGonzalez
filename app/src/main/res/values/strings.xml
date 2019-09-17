@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TPDM_U1_Practica2_DanielGonzalez</string>
+
+    <array name="menuOpciones">
+        <item>Capturar Valores</item>
+        <item>Mostrar Valores</item>
+        <item>Acerca De...</item>
+        <item>Salir</item>
+    </array>
+
+</resources>

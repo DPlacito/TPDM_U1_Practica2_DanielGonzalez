@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="Capturar Datos"
+        android:textColor="#3F51B5"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:id="@+id/layo_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Valor:"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/valor"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:hint="Introduce Un Valor"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layo_posicionC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Posicion C:"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/posicionC_layout"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:hint="Introduce Posicion"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layo_posicionR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Posicion R:"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/posicionR_layout"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:hint="Introduce Posicion"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layo_capturarYrepetir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCapturar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:padding="20dp"
+            android:text="Capturar" />
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:padding="20dp"
+            android:text="Regresar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layo_Archivar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp">
+
+            <RadioButton
+                android:id="@+id/rb_Archivo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Archivo1"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rb_Archivo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Archivo2"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rb_Archivo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Archivo3"
+                android:textSize="20dp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnArchivar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="45dp"
+            android:padding="20dp"
+            android:text="Archivar" />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <GridLayout
+        android:id="@+id/Gridlayoutxd"
+        android:layout_width="wr"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        >
+    </GridLayout>
+    </ScrollView>
+
+
+</LinearLayout>

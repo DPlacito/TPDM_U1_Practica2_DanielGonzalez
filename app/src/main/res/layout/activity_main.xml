@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Practica #2 Unidad 1"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:textColor="#F44336"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cuantas Celdillas Debera Generar: "
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="#000"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/layo_celdillas">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Celdillas:"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000"
+
+            />
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Esciba Aqui # Celdillas"
+           android:layout_marginLeft="26dp"
+           android:inputType="numberDecimal"
+           android:id="@+id/celdillas"
+           />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/layo_renglones"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Renglones:"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="#000"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Esciba Aqui # Renglones"
+            android:layout_marginLeft="10dp"
+            android:inputType="numberDecimal"
+            android:id="@+id/renglones"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/rg">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Vector"
+        android:textSize="20dp"
+        android:id="@+id/rbVector"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Matriz"
+            android:layout_marginRight="2dp"
+            android:textSize="20dp"
+            android:checked="true"
+            android:id="@+id/rbMatriz"/>
+
+    </RadioGroup>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:id="@+id/menuListView"
+        android:entries="@array/menuOpciones"
+        />
+
+</LinearLayout>
